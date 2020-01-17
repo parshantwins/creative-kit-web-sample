@@ -8,7 +8,7 @@
 
 <body>
     <!–– Other Page HTML -->
-    <div class="snapchat-creative-kit-share" data-size="large"></div>
+    <!-- <div class="snapchat-creative-kit-share" data-size="large"></div> -->
     <button
         class="class1 class2 snapchat-share-button"
         data-share-url="https://riasahniwins.github.io/creative-kit-web-sample/UCapture_Share.png"
@@ -29,11 +29,11 @@
       sjs.parentNode.insertBefore(js, sjs);
     }(document, 'script', 'snapkit-creative-kit-sdk'));
 
-    // window.snapKitInit = function () {
-    //   snap.creativekit.initalizeShareButtons(
-    //     document.getElementsByClassName('snapchat-share-button')
-    //   );
-    // };
+    window.snapKitInit = function () {
+      snap.creativekit.initalizeShareButtons(
+        document.getElementsByClassName('snapchat-share-button')
+      );
+    };
 
   </script>
 </body>
